@@ -12,8 +12,16 @@ public class SpringBootHelloWorldApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootHelloWorldApplication.class, args);
 	}
-	@RequestMapping("/new")
+
+	@RequestMapping("/")
 	public String home(){
+		return "<strong>hola mundo jaja</strong> <br>" +
+				"<img src=\"https://pbs.twimg.com/media/GEOBpYLWIAABGSS.jpg\" alt=\"Mr Tartaria\">";
+	}
+
+
+	@RequestMapping("/new")
+	public String newHome(){
 		return "<strong>Leo y camilo hola mundo</strong> <br>" +
 				"<img src=\"https://pbs.twimg.com/media/GEOBpYLWIAABGSS.jpg\" alt=\"Mr Tartaria\">";
 	}
